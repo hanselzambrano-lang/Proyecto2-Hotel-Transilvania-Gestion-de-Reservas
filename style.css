@@ -1,5 +1,10 @@
-logo_nombre{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+#logo_nombre {
+    width: auto;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+a{
+    text-decoration: none;
 }
