@@ -1,11 +1,13 @@
-<!DOCTYPE html>
+<!DOCT    <link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}?v=2">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=2">E html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
     <title>Hotel Transilvania</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
     </header>
     <aside>
      <nav class="navbar">
-        <img src="IMG/ChatGPT Image 3 oct 2025, 12_34_17 p.m..png" alt="Hotel Transilvania" id="logo_imagen">
+        <img src="{{ url_for('static', filename='IMG/ChatGPT Image 3 oct 2025, 12_34_17 p.m..png') }}" alt="Hotel Transilvania" id="logo_imagen">
         <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="reservas.html">Reservas</a></li>
@@ -85,7 +87,7 @@
                     
                     <div class="habitacion-card">
                         <div class="card-image">
-                            <img src="IMG/habitacion-estandar.jpg" alt="Habitación Estándar" loading="lazy">
+                            <img src="{{ url_for('static', filename='IMG/modern hotel bedroom.png') }}" alt="Habitación Estándar" loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Habitación Estándar</h3>
@@ -102,7 +104,7 @@
 
                     <div class="habitacion-card">
                         <div class="card-image">
-                            <img src="IMG/habitacion-deluxe.jpg" alt="Habitación Deluxe" loading="lazy">
+                            <img src="{{ url_for('static', filename='IMG/deluxe_hotel_rom.png') }}" alt="Habitación Deluxe" loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Habitación Deluxe</h3>
@@ -119,7 +121,7 @@
 
                     <div class="habitacion-card">
                         <div class="card-image">
-                            <img src="IMG/habitacion-suite.jpg" alt="Suite Transilvania" loading="lazy">
+                            <img src="{{ url_for('static', filename='IMG/hotel_suite_interior.png') }}" alt="Suite Transilvania" loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Suite Transilvania</h3>
@@ -136,7 +138,7 @@
 
                     <div class="habitacion-card">
                         <div class="card-image">
-                            <img src="IMG/habitacion-presidencial.jpg" alt="Suite Presidencial" loading="lazy">
+                            <img src="{{ url_for('static', filename='IMG/presidencialsuite.png') }}" alt="Suite Presidencial" loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Suite Presidencial</h3>
