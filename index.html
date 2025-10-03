@@ -13,21 +13,179 @@
      
     </header>
     <aside>
-        <h1 id="logo_nombre">
-             <img src="IMG/ChatGPT Image 3 oct 2025, 12_34_17 p.m..png" alt="Hotel Transilvania" id="logo_nombre">
-        </h1>
-        <p>Un sueño de otro mundo</p>  
      <nav class="navbar">
+        <img src="IMG/ChatGPT Image 3 oct 2025, 12_34_17 p.m..png" alt="Hotel Transilvania" id="logo_imagen">
         <ul>
-        <li><a href="index.html">Inicio</a> </li>
-        <li><a href="about.html">About</a> </li>
+        <li><a href="index.html">Inicio</a></li>
         <li><a href="reservas.html">Reservas</a></li>
         <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="about.html">About</a></li>
         </ul>
     </nav>
     </aside>
 
     <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Bienvenido al Hotel Transilvania</h2>
+                <p class="hero-subtitle">Un refugio mágico en el corazón de las montañas</p>
+            </div>
+        </section>
+
+        <!-- Formulario de Reservas -->
+        <section class="reservas-section">
+            <div class="container">
+                <h2 class="section-title">Reserva tu Habitación</h2>
+                <form class="reserva-form" id="reservaForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="checkin">Fecha de Entrada</label>
+                            <input type="date" id="checkin" name="checkin" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="checkout">Fecha de Salida</label>
+                            <input type="date" id="checkout" name="checkout" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="huespedes">Huéspedes</label>
+                            <select id="huespedes" name="huespedes" required>
+                                <option value="">Seleccionar</option>
+                                <option value="1">1 Huésped</option>
+                                <option value="2">2 Huéspedes</option>
+                                <option value="3">3 Huéspedes</option>
+                                <option value="4">4 Huéspedes</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="tipo-habitacion">Tipo de Habitación</label>
+                            <select id="tipo-habitacion" name="tipo-habitacion" required>
+                                <option value="">Seleccionar</option>
+                                <option value="estandar">Estándar</option>
+                                <option value="deluxe">Deluxe</option>
+                                <option value="suite">Suite Transilvania</option>
+                                <option value="presidencial">Presidencial</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-reservar">Buscar Disponibilidad</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Tipos de Habitaciones -->
+        <section class="habitaciones-section">
+            <div class="container">
+                <h2 class="section-title">Nuestras Habitaciones</h2>
+                <div class="habitaciones-grid">
+                    
+                    <div class="habitacion-card">
+                        <div class="card-image">
+                            <img src="IMG/habitacion-estandar.jpg" alt="Habitación Estándar" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>Habitación Estándar</h3>
+                            <p class="precio">$120 <span>/noche</span></p>
+                            <ul class="amenidades">
+                                <li>• Wi-Fi gratuito</li>
+                                <li>• TV de pantalla plana</li>
+                                <li>• Baño privado</li>
+                                <li>• Aire acondicionado</li>
+                            </ul>
+                            <button class="btn-seleccionar" data-tipo="estandar">Seleccionar</button>
+                        </div>
+                    </div>
+
+                    <div class="habitacion-card">
+                        <div class="card-image">
+                            <img src="IMG/habitacion-deluxe.jpg" alt="Habitación Deluxe" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>Habitación Deluxe</h3>
+                            <p class="precio">$180 <span>/noche</span></p>
+                            <ul class="amenidades">
+                                <li>• Todo lo de Estándar</li>
+                                <li>• Vista a las montañas</li>
+                                <li>• Minibar incluido</li>
+                                <li>• Balcón privado</li>
+                            </ul>
+                            <button class="btn-seleccionar" data-tipo="deluxe">Seleccionar</button>
+                        </div>
+                    </div>
+
+                    <div class="habitacion-card">
+                        <div class="card-image">
+                            <img src="IMG/habitacion-suite.jpg" alt="Suite Transilvania" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>Suite Transilvania</h3>
+                            <p class="precio">$300 <span>/noche</span></p>
+                            <ul class="amenidades">
+                                <li>• Sala de estar separada</li>
+                                <li>• Jacuzzi privado</li>
+                                <li>• Servicio de habitaciones 24h</li>
+                                <li>• Chimenea</li>
+                            </ul>
+                            <button class="btn-seleccionar" data-tipo="suite">Seleccionar</button>
+                        </div>
+                    </div>
+
+                    <div class="habitacion-card">
+                        <div class="card-image">
+                            <img src="IMG/habitacion-presidencial.jpg" alt="Suite Presidencial" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>Suite Presidencial</h3>
+                            <p class="precio">$500 <span>/noche</span></p>
+                            <ul class="amenidades">
+                                <li>• Dos habitaciones</li>
+                                <li>• Terraza privada</li>
+                                <li>• Butler personal</li>
+                                <li>• Vista panorámica</li>
+                            </ul>
+                            <button class="btn-seleccionar" data-tipo="presidencial">Seleccionar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios del Hotel -->
+        <section class="servicios-section">
+            <div class="container">
+                <h2 class="section-title">Servicios del Hotel</h2>
+                <div class="servicios-grid">
+                    <div class="servicio-item">
+                        <div class="servicio-icon">🍽️</div>
+                        <h3>Restaurante</h3>
+                        <p>Cocina internacional y platos locales</p>
+                    </div>
+                    
+                    <div class="servicio-item">
+                        <div class="servicio-icon">🏊‍♀️</div>
+                        <h3>Piscina</h3>
+                        <p>Piscina climatizada disponible todo el año</p>
+                    </div>
+                    
+                    <div class="servicio-item">
+                        <div class="servicio-icon">🚗</div>
+                        <h3>Estacionamiento</h3>
+                        <p>Estacionamiento gratuito para huéspedes</p>
+                    </div>
+                    
+                    <div class="servicio-item">
+                        <div class="servicio-icon">📶</div>
+                        <h3>Wi-Fi Gratis</h3>
+                        <p>Internet de alta velocidad en todo el hotel</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer>
