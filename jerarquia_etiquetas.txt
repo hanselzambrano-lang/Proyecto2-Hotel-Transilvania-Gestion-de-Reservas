@@ -1,0 +1,82 @@
+JERARQUÍA DE ETIQUETAS HTML - CrediSmart
+=========================================
+
+<!DOCTYPE html>
+<html lang="en"> ------------------------------------------------┐
+│                                                                 │
+├── <head>                                                        │
+│   ├── <meta charset="UTF-8">                                   │
+│   ├── <meta name="viewport">                                   │
+│   ├── <link> (Google Fonts - preconnect)                       │
+│   ├── <link> (Google Fonts - preconnect gstatic)               │
+│   ├── <link> (Roboto font)                                     │
+│   ├── <link rel="stylesheet" href="css.css">                   │
+│   └── <title>Actividad</title>                                 │
+│   </head> ✓                                                     │
+│                                                                 │
+├── <body> -----------------------------------------------------┐ │
+│   │                                                            │ │
+│   ├── <nav class="navbar"> -------------------------------┐   │ │
+│   │   └── <div class="container">                         │   │ │
+│   │       ├── <a href="index.html">                       │   │ │
+│   │       │   └── <h1 class="logo">CrediSmart</h1>        │   │ │
+│   │       │   </a> ✓                                       │   │ │
+│   │       └── <ul class="menu">                            │   │ │
+│   │           ├── <li><a href="#">Inicio</a></li>          │   │ │
+│   │           ├── <li><a href="#">Buscar</a></li>          │   │ │
+│   │           ├── <li><a href="#">Solicitar crédito</a>    │   │ │
+│   │           └── <li><a href="#">Contacto</a></li>        │   │ │
+│   │           </ul> ✓                                       │   │ │
+│   │       </div> ✓                                          │   │ │
+│   │   </nav> ✓ -------------------------------------------- ┘   │ │
+│   │                                                            │ │
+│   ├── <header class="banner"> ---------------------------┐   │ │
+│   │   └── <div class="container">                        │   │ │
+│   │       ├── <h2>Encuentra tu credito...</h2>           │   │ │
+│   │       ├── <p>Tu amigo financiero...</p>              │   │ │
+│   │       └── <a href="#" class="btn">...</a>            │   │ │
+│   │       </div> ✓                                        │   │ │
+│   │   </header> ✓ ---------------------------------------- ┘   │ │
+│   │                                                            │ │
+│   └── <main class="container"> --------------------------┐   │ │
+│       │                                                    │   │ │
+│       └── <section class="credits-section"> ----------┐   │   │ │
+│           │                                            │   │   │ │
+│           ├── <h3>Productos Crediticios</h3>          │   │   │ │
+│           │                                            │   │   │ │
+│           └── <div class="credits-grid"> ----------┐   │   │   │ │
+│               │                                     │   │   │   │ │
+│               ├── [Crédito #1] ----------------┐   │   │   │   │ │
+│               │   <div class="credit-card">    │   │   │   │   │ │
+│               │   ├── <div class="card-header">│   │   │   │   │ │
+│               │   │   ├── <span>💵</span>      │   │   │   │   │ │
+│               │   │   └── <h4>...</h4>         │   │   │   │   │ │
+│               │   │   </div> ✓                 │   │   │   │   │ │
+│               │   ├── <p>...</p>               │   │   │   │   │ │
+│               │   ├── <div class="detalles">   │   │   │   │   │ │
+│               │   │   ├── <div>...</div> ✓     │   │   │   │   │ │
+│               │   │   ├── <div>...</div> ✓     │   │   │   │   │ │
+│               │   │   └── <div>...</div> ✓     │   │   │   │   │ │
+│               │   │   </div> ✓ [AGREGADO #1]   │   │   │   │   │ │
+│               │   └── <button>...</button>     │   │   │   │   │ │
+│               │   </div> ✓                     │   │   │   │   │ │
+│               │                                 │   │   │   │   │ │
+│               ├── [Crédito #2] (igual) ✓ [AGREGADO #2]  │   │   │ │
+│               ├── [Crédito #3] (igual) ✓ [AGREGADO #3]  │   │   │ │
+│               ├── [Crédito #4] (igual) ✓ [AGREGADO #4]  │   │   │ │
+│               ├── [Crédito #5] (igual) ✓ [AGREGADO #5]  │   │   │ │
+│               └── [Crédito #6] (igual) ✓ [AGREGADO #6]  │   │   │ │
+│                   │                                       │   │   │ │
+│                   </div> ✓ [AGREGADO #7 - credits-grid] ─┘   │   │ │
+│               </section> ✓ ----------------------------------- ┘   │ │
+│           </main> ✓ -------------------------------------------- ┘ │ │
+│       </body> ✓ --------------------------------------------------- ┘ │
+└── </html> ✓ [AGREGADO #8] ------------------------------------------ ┘
+
+
+LEYENDA:
+========
+✓             = Etiqueta existente correctamente cerrada
+[AGREGADO #X] = Etiqueta de cierre agregada (corrección)
+
+TOTAL DE CORRECCIONES: 8 etiquetas </div> y </html> agregadas
